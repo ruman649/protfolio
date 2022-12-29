@@ -27,8 +27,10 @@
 
 <body>
 
-    <div class="container ">
-        <div class="row">
+    <div class="containers ">
+        <div class="rows">
+
+
             <!-- start top bar navigation  -->
             <div class="top_bar">
                 <nav class="navbar navbar-expand-md navigation  d-md-none">
@@ -67,7 +69,7 @@
             </div><!-- end top bar navigation  -->
 
 
-            <div class=" col-md-4 d-none d-md-flex flex-column justify-content-center align-items-center left_site ">
+            <div class="left_site d-none d-md-flex flex-column justify-content-center align-items-center  ">
                 <div class="profile_img ">
                     <img src="./asset/croped.png" class="img-fluid " alt="">
                 </div>
@@ -88,10 +90,10 @@
                     </div><!-- all tabs button end -->
                 </div>
             </div>
-            <div class="col-md-8 right_site mt-5 mt-md-0 is_scroll">
+            <div class="right_site mt-5 mt-md-0 is_scroll">
 
                 <!-- all tabs contents start -->
-                <div class="d-flex align-items-start  ">
+                <div class=" align-items-start">
                     <div class="tab-content " id="v-pills-tabContent">
 
                         <!-- about  -->
@@ -118,9 +120,8 @@
                         </div>
 
                         <!-- skills section  -->
-                        <div class="tab-pane fade pt-5 pt-md-0 text-center" id="v-pills-skills" role="tabpanel"
-                            aria-labelledby="v-pills-skills-tab" tabindex="0">
-
+                        <div class="skills_section_container tab-pane fade pt-5 pt-md-0 text-center" id="v-pills-skills"
+                            role="tabpanel" aria-labelledby="v-pills-skills-tab" tabindex="0">
                             <div class="skills_section my-2">
                                 <div class="row align-items-center">
                                     <div class="col-4 text-center">
@@ -252,20 +253,44 @@
                         </div>
 
                         <!-- Contact section  -->
-                        <div class="tab-pane fade pt-5 pt-md-0" id="v-pills" role="tabpanel"
+                        <div class="contact_section tab-pane fade pt-5 pt-md-0" id="v-pills" role="tabpanel"
                             aria-labelledby="v-pills-profile-tab" tabindex="0">
-                            
+                            <div class="mb-3 row ">
+                                <div class="col-sm-10">
+                                    <h2>Hey! Are You Ready For Hire a Quality persion?</h2>
+                                </div>
+                            </div>
                             <form action="">
-                                <div class="mb-3 row">
-                                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                                <div class="mb-3 row ">
                                     <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword">
+                                        <input type="text" class="form-select-sm form-control shadow-sm"
+                                            placeholder="Full Name" id="full_name">
                                     </div>
                                 </div>
+                                <div class="mb-3 row ">
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-select-sm form-control shadow-sm"
+                                            placeholder="Valid email" id="full_name">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row ">
+                                    <div class="col-sm-10">
+                                        <input type="phone" class="form-select-sm form-control shadow-sm"
+                                            placeholder="Phone Number" id="full_name">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control shadow-sm" placeholder="Your message"
+                                            id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                                <a href="" class="btn btn-info">Submit</a>
                             </form>
 
                         </div>
-                        
+
                     </div>
                 </div>
                 <!-- all tabs contents end -->

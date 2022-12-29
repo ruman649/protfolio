@@ -140,17 +140,31 @@ body {
     color: var(--bs-nav-pills-link-active-color);
     background-color: var(--white-dark);
 }
+
+.containers {
+    width: 90%;
+    margin-left: 5%;
+}
+
 .left_site {
     background-color: var(--light-dark);
     height: 100vh;
+    float: left;
+    width: 30%;
 }
+
 /* right_site */
 .right_site {
     background-color: var(--white-dark);
     height: 100vh;
     overflow-y: scroll;
+    float: right;
+    width: 70%;
+    padding-left: 1rem;
+
 }
-.right_site .tab-content{
+
+.right_site .tab-content {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -178,7 +192,7 @@ body {
     top: 0;
     left: 0;
     transition: all 0.2s ease-in-out;
-    
+
 }
 
 .navigation .stream {
@@ -216,7 +230,8 @@ body {
     border: 2px solid var(--white-color);
     transition: all 0.3s ease-in;
 }
-.navigation a .size_on{
+
+.navigation a .size_on {
     width: 60px;
     height: 60px;
     /* object-fit: cover;
@@ -234,19 +249,21 @@ body {
 
 
 /* about */
-h1{
+h1 {
     font-family: var(--font-Prosto);
     font-weight: 700;
     color: rgb(139, 138, 138);
     text-shadow: 0px 5px 5px var(--text-muted);
     /* box-shadow: 5px 10px 5px var(--dark); */
 }
-h2{
+
+h2 {
     color: var(--text-muted);
     padding: 1rem 0;
 }
-p{
-    padding:0 1rem ;
+
+p {
+    padding: 0 1rem;
     letter-spacing: 1px;
     font-size: 1.05rem;
     /* font-family: var(--font-bals); */
@@ -262,26 +279,50 @@ p{
 
 
 /* skills_section  */
-.skills_section{
-    min-width: 500px;
-    border: 2px solid var(--dark);
-    border-right: unset;
-    padding: 0.5rem 2rem;
-    transition: all 0.3s ease-in-out;
-   border-radius: 15px 0px 0px 15px;
-}
-.skills_section:hover{
-    background-color: var(--light-dark);
-}
-.progress{
---bs-progress-bg: var(--dark);
-}
-.progress-bar{
-    background-color: var(--white-dark);    
+.skills_section_container {
+    width: 800px;
 }
 
-.skills_section span{
+.skills_section {
+    /* min-width: 500px; */
+    border: 2px solid var(--dark);
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.skills_section:hover {
+    background-color: var(--light-dark);
+}
+
+.progress {
+    --bs-progress-bg: var(--dark);
+}
+
+.progress-bar {
+    background-color: var(--white-dark);
+}
+
+.skills_section span {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-muted);
+}
+
+
+/* contact_section */
+.contact_section {
+    width: 800px;
+    padding: 0px 10px;
+}
+
+.form-control{
+    background-color:var(--light-dark);
+    color: white !important;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.form-control:focus{
+    background-color: var(--white-dark);
 }
