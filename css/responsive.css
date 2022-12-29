@@ -1,0 +1,11 @@
+@media (max-width: 991px) {
+    .skills_section {
+        min-width: 450px;
+    }
+}
+
+@media (max-width: 500px){
+    .skills_section{
+        min-width: 370px;
+    }
+}
