@@ -316,13 +316,114 @@ p {
     padding: 0px 10px;
 }
 
-.form-control{
-    background-color:var(--light-dark);
+.form-control {
+    background-color: var(--light-dark);
     color: white !important;
     font-size: 1.1rem;
     letter-spacing: 1px;
 }
 
-.form-control:focus{
+.form-control:focus {
     background-color: var(--white-dark);
+}
+
+
+.project_box {
+    padding: 1rem;
+    background-color: var(--dark);
+    border-radius: 1rem;
+    color: var(--text-muted);
+}
+
+.project_box_link {
+    padding: 1rem;
+    background-color: var(--info-color);
+    border-radius: 1rem;
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+.project_box_link:hover{
+    background-color:#1e8de2;
+}
+
+.project_box:hover {
+    transform: scale(1.02);
+}
+
+.project_box span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.btn_btn{
+    color: white;
+    font-size: 1.4rem;
+    background-color: rgba(78, 142, 145, 0.7);
+    border-radius: 50%;
+    padding: 10px 15px;
+    position: fixed;
+    z-index: 100;
+    top: 10;
+    margin-left: 12px;
+}
+ .card {
+    position: relative;
+}
+ .card img{
+    border-radius: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(64, 102, 102, 0.2);
+}
+
+.overlay h2 {
+    color: white;
+    text-shadow: -2px 0px 2px var(--dark);
+    line-height: 1.1rem;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 1rem;
+    background-color: rgba(31, 31, 31, 0.5);
+}
+
+.overlay:hover {
+    background-color: rgba(37, 37, 37, 0.6);
+}
+
+.cv {
+    background-color: var(--secondary-color);
+    color: white !important;
+    letter-spacing: 0.6px !important;
+    text-transform: capitalize !important;
+}
+
+.cv:hover {
+    background-color: var(--primary-color) !important;
+}
+.mycv{
+    padding: 1rem;
+}
+
+.social_media{
+    border-top: 2px solid #02a499;
+    border-bottom: 2px solid #02a499;
+    padding: 5px 0;
+}
+
+.social_media i{
+font-size: 1.4rem;
+color: #02a499;
+padding: 5px;
+transition: all 0.2s ease-in-out;
+}
+.social_media i:hover{
+    color: #0f6d67;
+    transform: scale(1.2);
 }

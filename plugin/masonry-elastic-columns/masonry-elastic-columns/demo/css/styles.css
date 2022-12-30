@@ -1,0 +1,149 @@
+html, body, div, button, p, img, h1, h2, h3, h4, pre
+{
+    margin  : 0;
+    padding : 0;
+    border  : 0;
+}
+
+html
+{
+    background              : #c3d4d9;
+    -webkit-font-smoothing  : antialiased;
+    -moz-osx-font-smoothing : grayscale;
+}
+
+body
+{
+    position    : relative;
+    font-family : Roboto, sans-serif;
+}
+
+.header
+{
+    z-index    : 2;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 76px;
+    position   : absolute;
+    background : #bacacf;
+}
+
+.header h1
+{
+    font-weight : 500;
+    color       : #ffffff;
+    text-shadow : 0 1px 0 #92a6ab;
+    float       : left;
+    line-height : 32px;
+    font-size   : 32px;
+    margin      : 19px 0 0 20px;
+}
+
+@media screen and (max-width : 600px)
+{
+    .header h1
+    {
+        line-height : 22px;
+        font-size   : 22px;
+        margin      : 24px 0 0 20px;
+    }
+}
+
+@media screen and (max-width : 450px)
+{
+    .header h1
+    {
+        display : none;
+    }
+}
+
+.header button
+{
+    float         : right;
+    padding       : 8px 16px 8px 16px;
+    margin        : 20px 20px 0 0;
+    color         : #ffffff;
+    text-shadow   : 0 1px 0 #92a6ab;
+    background    : transparent;
+    font-size     : 14px;
+    font-weight   : 500;
+    cursor        : pointer;
+    border-radius : 15px;
+    outline       : 0;
+    border        : 1px solid #e0ebec;
+}
+
+@media screen and (max-width : 600px)
+{
+    .header button
+    {
+        padding   : 4px 12px 4px 12px;
+        margin    : 24px 20px 0 0;
+        color     : #ffffff;
+        font-size : 13px;
+    }
+}
+
+.header button:active
+{
+    background : #c3d4d9;
+}
+
+.header .loader
+{
+    visibility : hidden;
+    margin     : 25px 20px 0 0;
+    float      : right;
+    font-size  : 22px;
+    color      : #ffffff;
+}
+
+@media screen and (max-width : 450px)
+{
+    .header .loader
+    {
+        margin    : 28px 20px 0 0;
+        float     : right;
+        font-size : 17px;
+    }
+}
+
+.columns
+{
+    position : absolute;
+    left     : 0;
+    right    : 0;
+    top      : 76px;
+    bottom   : 0;
+    z-index  : 1;
+}
+
+.columns .item
+{
+    font-weight   : 300;
+    display       : none;
+    border-radius : 3px;
+    overflow      : hidden;
+    background    : #ffffff;
+    font-size     : 13px;
+    color         : #212121;
+}
+
+.columns .item h4
+{
+    font-weight : 500;
+    font-size   : 14px;
+    line-height : 14px;
+    padding     : 10px 10px 0 10px;
+}
+
+.columns .item p
+{
+    padding : 10px;
+}
+
+.columns .item img
+{
+    width : 100%;
+}

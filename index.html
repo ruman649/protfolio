@@ -20,6 +20,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 
+
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 
@@ -38,6 +39,8 @@
                         <a class="navbar-brand " href="#">
                             <img src="./asset/croped.png" class="img-fluid img_size" alt="">
                         </a>
+                        <button class="btn cv ms-3">download cv</button>
+
                         <button class="navbar-toggler border-0 shadow-none fs-4" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -57,9 +60,16 @@
                                     <button class="nav-link links text-end" id="v-pills-skills-tab"
                                         data-bs-toggle="pill" data-bs-target="#v-pills-skills" type="button" role="tab"
                                         aria-controls="v-pills-skills" aria-selected="false">Skills</button>
+                                    <button class="nav-link links text-end" id="v-pills-Projects-tab"
+                                        data-bs-toggle="pill" data-bs-target="#v-pills-Projects" type="button"
+                                        role="tab" aria-controls="v-pills-Projects"
+                                        aria-selected="false">Projects</button>
                                     <button class="nav-link links text-end" id="v-pills-profile-tab"
                                         data-bs-toggle="pill" data-bs-target="#v-pills" type="button" role="tab"
                                         aria-controls="v-pills-profile" aria-selected="false">Contact</button>
+                                    <button id="v-pills-cv-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cv"
+                                        type="button" role="tab" aria-controls="v-pills-cv" class="btn cv nav-link links">download
+                                        cv</button>
                                 </div><!-- all tabs button end -->
                             </div>
                         </div>
@@ -83,10 +93,15 @@
                             aria-selected="true"><i class="fa-solid fa-address-card me-1"></i> About</button>
                         <button class="nav-link" id="v-pills-skills-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills-skills" type="button" role="tab" aria-controls="v-pills-skills"
-                            aria-selected="false"><i class="fa-solid fa-check me-1"></i>Skills</button>
+                            aria-selected="false"><i class="fa-solid fa-thumbs-up me-1"></i>Skills</button>
+                        <button class="nav-link" id="v-pills-Projects-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-Projects" type="button" role="tab" aria-controls="v-pills-Projects"
+                            aria-selected="false"><i class="fa-solid fa-list me-1"></i>Projects</button>
                         <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#v-pills" type="button" role="tab" aria-controls="v-pills-profile"
                             aria-selected="false"><i class="fa-solid fa-sim-card me-1"></i>Contact</button>
+                        <button id="v-pills-cv-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cv" type="button"
+                            role="tab" aria-controls="v-pills-cv" class="btn cv">view resume</button>
                     </div><!-- all tabs button end -->
                 </div>
             </div>
@@ -115,6 +130,17 @@
                                     regelialia. It is a paradisematic
                                     country, in which roasted parts of sentences fly into your mouth.
                                 </p>
+                                <div class="social_media">
+                                    <a href="">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                    <a href="">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </div>
                             </div>
 
                         </div>
@@ -252,6 +278,34 @@
 
                         </div>
 
+                        <!-- projects list  -->
+                        <div class="projects_section_container tab-pane fade pt-5 pt-md-0 text-center"
+                            id="v-pills-Projects" role="tabpanel" aria-labelledby="v-pills-Projects-tab" tabindex="0">
+                            <div class="projects">
+                                <div class="row g-3 mt-5">
+                                    <div class="col-12">
+                                        <div class="project_box">
+                                            <h5>Running Projects</h5>
+                                            <span>123</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="project_box">
+                                            <h5>Complated Projects</h5>
+                                            <span>123</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mx-auto">
+                                        <a href="./project.html">
+                                            <div class="project_box_link">
+                                                <h5>Click for Watch all projects Demo</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Contact section  -->
                         <div class="contact_section tab-pane fade pt-5 pt-md-0" id="v-pills" role="tabpanel"
                             aria-labelledby="v-pills-profile-tab" tabindex="0">
@@ -286,8 +340,19 @@
                                     </div>
                                 </div>
 
-                                <a href="" class="btn btn-info">Submit</a>
+                                <button href="" class="btn btn-info">Submit</button>
                             </form>
+
+                        </div>
+
+                        <!-- resume or cv section  -->
+                        <div class="contact_section tab-pane fade pt-5 pt-md-0" id="v-pills-cv" role="tabpanel"
+                            aria-labelledby="v-pills-cv-tab" tabindex="0">
+
+                            <div class="mycv">
+                                <button class="btn cv cv_position mb-2">download cv</button>
+                                <img src="./asset/_COX0005.jpg" class="img-fluid " alt="">
+                            </div>
 
                         </div>
 
@@ -308,11 +373,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
 
 
-
     <!-- jquery  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./plugin/masonry-elastic-columns/masonry-elastic-columns/dist/elastic-columns.min.js"></script>
 
 
     <!-- own js -->

@@ -1,6 +1,9 @@
-
-@media (max-width:768px){
+@media (max-width:768px) {
     .right_site {
         width: 100%;
+    }
+
+    .mycv .cv_position {
+        display: none;
     }
 }
